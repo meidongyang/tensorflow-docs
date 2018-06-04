@@ -1,3 +1,6 @@
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # 单词的向量表示
 
 本文中，我们来通过 [Mikolov 等人的论文](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) 来看看 word2vec 这个模型。此模型被用来训练单词的向量表示，此方法又称为『词嵌入』。
@@ -29,7 +32,7 @@
 
 ## 放大对比噪音训练
 
-神经概率语言模型传统的使用 [maximum likelihood](https://en.wikipedia.org/wiki/Maximum_likelihood) (ML) 定理来最大化下一个单词的的概率，根据 [*softmax* function](https://en.wikipedia.org/wiki/Softmax_function) 这个函数使用之前的单词 \\(h\\) (代表 "history") 来推出下一个单词 \\(w_t\\) (代表 "target")。
+神经概率语言模型传统的使用 [maximum likelihood](https://en.wikipedia.org/wiki/Maximum_likelihood) (ML) 定理来最大化下一个单词的的概率，根据 [*softmax* function](https://en.wikipedia.org/wiki/Softmax_function) 这个函数使用之前的单词 $h$ (代表 "history") 来推出下一个单词 \\(w_t\\) (代表 "target")。
 
 $$
 \begin{align}
